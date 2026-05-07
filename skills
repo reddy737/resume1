@@ -1,0 +1,21 @@
+skills_db = [
+    "python",
+    "java",
+    "sql",
+    "machine learning",
+    "flask",
+    "django",
+    "react",
+    "aws"
+]
+
+def extract_skills(text):
+    found_skills = []
+
+    text = text.lower()
+
+    for skill in skills_db:
+        if skill in text:
+            found_skills.append(skill)
+
+    return found_skills
